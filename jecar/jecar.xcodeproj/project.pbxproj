@@ -67,8 +67,6 @@
 		3B1640C525F7361A00116747 /* jecar */ = {
 			isa = PBXGroup;
 			children = (
-				3B7FDE5C25FB80EE00CDF3FF /* LoginViewController.swift */,
-				3B7FDE5D25FB80EE00CDF3FF /* LoginViewController.xib */,
 				3B7FDE6025FB80FF00CDF3FF /* ViewController */,
 				3B1640CA25F7361A00116747 /* ViewController.swift */,
 				3B7FDE6125FC6FB600CDF3FF /* SupportingFiles */,
@@ -80,6 +78,8 @@
 		3B7FDE6025FB80FF00CDF3FF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3B7FDE5C25FB80EE00CDF3FF /* LoginViewController.swift */,
+				3B7FDE5D25FB80EE00CDF3FF /* LoginViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
