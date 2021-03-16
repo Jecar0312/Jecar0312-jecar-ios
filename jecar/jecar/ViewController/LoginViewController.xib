@@ -84,7 +84,7 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                             <state key="normal" title="로그인"/>
                                                             <connections>
-                                                                <action selector="btnClicked:" destination="-1" eventType="touchUpInside" id="CrE-se-XV6"/>
+                                                                <action selector="clickedLoginBtn:" destination="-1" eventType="touchUpInside" id="jz3-pr-4bV"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>

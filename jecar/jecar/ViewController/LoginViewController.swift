@@ -32,5 +32,12 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    @IBAction func clickedLoginBtn(_ sender: Any) {
+        let vc = MainViewController(nibName: "MainViewController", bundle: Bundle.main)
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+        
+    }
+    
 }
