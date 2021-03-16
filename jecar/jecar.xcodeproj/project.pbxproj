@@ -15,6 +15,8 @@
 		3B1640D325F7362000116747 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1640D125F7362000116747 /* LaunchScreen.storyboard */; };
 		3B7FDE5E25FB80EE00CDF3FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FDE5C25FB80EE00CDF3FF /* LoginViewController.swift */; };
 		3B7FDE5F25FB80EE00CDF3FF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7FDE5D25FB80EE00CDF3FF /* LoginViewController.xib */; };
+		3B8F4CC926009BD300B7DA1F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F4CC726009BD300B7DA1F /* MainViewController.swift */; };
+		3B8F4CCA26009BD300B7DA1F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B8F4CC826009BD300B7DA1F /* MainViewController.xib */; };
 		CAE324770919258D1BD3B27F /* Pods_jecar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78A6E0C1A1F3418457D1F2DE /* Pods_jecar.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		3B1640D425F7362000116747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B7FDE5C25FB80EE00CDF3FF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3B7FDE5D25FB80EE00CDF3FF /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		3B8F4CC726009BD300B7DA1F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3B8F4CC826009BD300B7DA1F /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		78A6E0C1A1F3418457D1F2DE /* Pods_jecar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jecar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D373A2C1F937450767F75B /* Pods-jecar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jecar.release.xcconfig"; path = "Target Support Files/Pods-jecar/Pods-jecar.release.xcconfig"; sourceTree = "<group>"; };
 		BBF73B6BE50FB9EE9E41A123 /* Pods-jecar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jecar.debug.xcconfig"; path = "Target Support Files/Pods-jecar/Pods-jecar.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 			children = (
 				3B7FDE5C25FB80EE00CDF3FF /* LoginViewController.swift */,
 				3B7FDE5D25FB80EE00CDF3FF /* LoginViewController.xib */,
+				3B8F4CC726009BD300B7DA1F /* MainViewController.swift */,
+				3B8F4CC826009BD300B7DA1F /* MainViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -175,6 +181,7 @@
 			files = (
 				3B7FDE5F25FB80EE00CDF3FF /* LoginViewController.xib in Resources */,
 				3B1640D325F7362000116747 /* LaunchScreen.storyboard in Resources */,
+				3B8F4CCA26009BD300B7DA1F /* MainViewController.xib in Resources */,
 				3B1640D025F7362000116747 /* Assets.xcassets in Resources */,
 				3B1640CE25F7361A00116747 /* Main.storyboard in Resources */,
 			);
@@ -233,6 +240,7 @@
 				3B1640CB25F7361A00116747 /* ViewController.swift in Sources */,
 				3B1640C725F7361A00116747 /* AppDelegate.swift in Sources */,
 				3B1640C925F7361A00116747 /* SceneDelegate.swift in Sources */,
+				3B8F4CC926009BD300B7DA1F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
