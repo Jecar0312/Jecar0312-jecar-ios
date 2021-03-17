@@ -34,9 +34,31 @@ class LoginViewController: UIViewController {
     */
     
     @IBAction func clickedLoginBtn(_ sender: Any) {
-        let vc = MainViewController(nibName: "MainViewController", bundle: Bundle.main)
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
+        setMainViews()
+    }
+    
+    func setMainViews() {
+        
+        let tabBarController = TabBarController()
+        let mainVC = MainViewController()
+        let myPageVC = MyPageViewController()
+        
+        let mainVCItem = UITabBarItem()
+        mainVCItem.title = "글 목록"
+        mainVCItem.image = UIImage(systemName: "house")
+                        
+        let myPageVCItem = UITabBarItem()
+        myPageVCItem.title = "마이 페이지"
+        myPageVCItem.image = UIImage(systemName: "person")
+        
+        mainVC.tabBarItem = mainVCItem
+        myPageVC.tabBarItem = myPageVCItem
+        
+        tabBarController.viewControllers = [mainVC, myPageVC]
+        
+        let navigationVC = NavigationViewController(rootViewController: tabBarController)
+        navigationVC.modalPresentationStyle = .fullScreen
+        self.present(navigationVC, animated: true, completion: nil)
         
     }
     
