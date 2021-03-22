@@ -41,6 +41,7 @@ class LoginViewController: UIViewController {
         
         let tabBarController = TabBarController()
         let mainVC = MainViewController()
+        var mainNaviVC = NavigationViewController(rootViewController: mainVC)
         let myPageVC = MyPageViewController()
         
         let mainVCItem = UITabBarItem()
@@ -51,15 +52,27 @@ class LoginViewController: UIViewController {
         myPageVCItem.title = "마이 페이지"
         myPageVCItem.image = UIImage(systemName: "person")
         
-        mainVC.tabBarItem = mainVCItem
+        mainNaviVC = setMainNaviVC(naviVC: mainNaviVC)
+        
+        mainNaviVC.tabBarItem = mainVCItem
         myPageVC.tabBarItem = myPageVCItem
         
-        tabBarController.viewControllers = [mainVC, myPageVC]
+        tabBarController.viewControllers = [mainNaviVC, myPageVC]
         
-        let navigationVC = NavigationViewController(rootViewController: tabBarController)
-        navigationVC.modalPresentationStyle = .fullScreen
-        self.present(navigationVC, animated: true, completion: nil)
+        tabBarController.modalPresentationStyle = .fullScreen
+        self.present(tabBarController, animated: true, completion: nil)
         
+        
+    }
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    func setMainNaviVC(naviVC: NavigationViewController) -> NavigationViewController {
+        
+        let titleLogo = self.titleLabel
+        titleLogo?.font = UIFont(name: "Rockwell-BoldItalic", size: 40)
+        naviVC.navigationBar.topItem?.titleView = titleLogo
+        
+        return naviVC
     }
     
 }

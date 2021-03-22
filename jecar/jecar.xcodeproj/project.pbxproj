@@ -21,6 +21,10 @@
 		3B8F4CF12600BA3A00B7DA1F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F4CEF2600BA3A00B7DA1F /* TabBarController.swift */; };
 		3B8F4CF52600BBB800B7DA1F /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F4CF32600BBB800B7DA1F /* MyPageViewController.swift */; };
 		3B8F4CF62600BBB800B7DA1F /* MyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B8F4CF42600BBB800B7DA1F /* MyPageViewController.xib */; };
+		3B8F4D052601F9C800B7DA1F /* PostListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F4D032601F9C800B7DA1F /* PostListCollectionViewCell.swift */; };
+		3B8F4D062601F9C800B7DA1F /* PostListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B8F4D042601F9C800B7DA1F /* PostListCollectionViewCell.xib */; };
+		3B8F4D092601FC0F00B7DA1F /* PostListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F4D072601FC0F00B7DA1F /* PostListTableViewCell.swift */; };
+		3B8F4D0A2601FC0F00B7DA1F /* PostListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B8F4D082601FC0F00B7DA1F /* PostListTableViewCell.xib */; };
 		CAE324770919258D1BD3B27F /* Pods_jecar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78A6E0C1A1F3418457D1F2DE /* Pods_jecar.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,11 @@
 		3B8F4CEF2600BA3A00B7DA1F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3B8F4CF32600BBB800B7DA1F /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		3B8F4CF42600BBB800B7DA1F /* MyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageViewController.xib; sourceTree = "<group>"; };
+		3B8F4CFD2601A49100B7DA1F /* NavigationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NavigationViewController.xib; path = ../../NavigationViewController.xib; sourceTree = "<group>"; };
+		3B8F4D032601F9C800B7DA1F /* PostListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B8F4D042601F9C800B7DA1F /* PostListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostListCollectionViewCell.xib; sourceTree = "<group>"; };
+		3B8F4D072601FC0F00B7DA1F /* PostListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewCell.swift; sourceTree = "<group>"; };
+		3B8F4D082601FC0F00B7DA1F /* PostListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostListTableViewCell.xib; sourceTree = "<group>"; };
 		78A6E0C1A1F3418457D1F2DE /* Pods_jecar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jecar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D373A2C1F937450767F75B /* Pods-jecar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jecar.release.xcconfig"; path = "Target Support Files/Pods-jecar/Pods-jecar.release.xcconfig"; sourceTree = "<group>"; };
 		BBF73B6BE50FB9EE9E41A123 /* Pods-jecar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jecar.debug.xcconfig"; path = "Target Support Files/Pods-jecar/Pods-jecar.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +90,7 @@
 			children = (
 				3B7FDE6025FB80FF00CDF3FF /* ViewController */,
 				3B1640CA25F7361A00116747 /* ViewController.swift */,
+				3B8F4D022601F97600B7DA1F /* Cells */,
 				3B7FDE6125FC6FB600CDF3FF /* SupportingFiles */,
 				3B1640D425F7362000116747 /* Info.plist */,
 			);
@@ -95,6 +105,7 @@
 				3B8F4CC726009BD300B7DA1F /* MainViewController.swift */,
 				3B8F4CC826009BD300B7DA1F /* MainViewController.xib */,
 				3B8F4CEB2600B7C000B7DA1F /* NavigationViewController.swift */,
+				3B8F4CFD2601A49100B7DA1F /* NavigationViewController.xib */,
 				3B8F4CEF2600BA3A00B7DA1F /* TabBarController.swift */,
 				3B8F4CF32600BBB800B7DA1F /* MyPageViewController.swift */,
 				3B8F4CF42600BBB800B7DA1F /* MyPageViewController.xib */,
@@ -112,6 +123,17 @@
 				3B1640D125F7362000116747 /* LaunchScreen.storyboard */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3B8F4D022601F97600B7DA1F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3B8F4D032601F9C800B7DA1F /* PostListCollectionViewCell.swift */,
+				3B8F4D042601F9C800B7DA1F /* PostListCollectionViewCell.xib */,
+				3B8F4D072601FC0F00B7DA1F /* PostListTableViewCell.swift */,
+				3B8F4D082601FC0F00B7DA1F /* PostListTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		99FF504B70401160EF48B619 /* Frameworks */ = {
@@ -192,11 +214,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7FDE5F25FB80EE00CDF3FF /* LoginViewController.xib in Resources */,
+				3B8F4D062601F9C800B7DA1F /* PostListCollectionViewCell.xib in Resources */,
 				3B1640D325F7362000116747 /* LaunchScreen.storyboard in Resources */,
 				3B8F4CCA26009BD300B7DA1F /* MainViewController.xib in Resources */,
 				3B1640D025F7362000116747 /* Assets.xcassets in Resources */,
 				3B1640CE25F7361A00116747 /* Main.storyboard in Resources */,
 				3B8F4CF62600BBB800B7DA1F /* MyPageViewController.xib in Resources */,
+				3B8F4D0A2601FC0F00B7DA1F /* PostListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,11 +276,13 @@
 				3B8F4CED2600B7C000B7DA1F /* NavigationViewController.swift in Sources */,
 				3B7FDE5E25FB80EE00CDF3FF /* LoginViewController.swift in Sources */,
 				3B1640CB25F7361A00116747 /* ViewController.swift in Sources */,
+				3B8F4D052601F9C800B7DA1F /* PostListCollectionViewCell.swift in Sources */,
 				3B1640C725F7361A00116747 /* AppDelegate.swift in Sources */,
 				3B8F4CF12600BA3A00B7DA1F /* TabBarController.swift in Sources */,
 				3B1640C925F7361A00116747 /* SceneDelegate.swift in Sources */,
 				3B8F4CC926009BD300B7DA1F /* MainViewController.swift in Sources */,
 				3B8F4CF52600BBB800B7DA1F /* MyPageViewController.swift in Sources */,
+				3B8F4D092601FC0F00B7DA1F /* PostListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

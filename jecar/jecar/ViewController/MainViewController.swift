@@ -10,7 +10,15 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+//    @IBOutlet weak var postListCollectionView: UICollectionView!
+    @IBOutlet weak var postListTableView: UITableView!
+    
     override func viewDidLoad() {
+        
+        postListTableView.delegate = self
+        postListTableView.dataSource = self
+        registPostListCell()
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -26,5 +34,24 @@ class MainViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func registPostListCell() {
+        let nibName = UINib(nibName: "PostListTableViewCell", bundle: nil)
+        postListTableView.register(nibName, forCellReuseIdentifier: "PostListCell")
+    }
 
+}
+
+extension MainViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = postListTableView.dequeueReusableCell(withIdentifier: "PostListCell", for: indexPath) as! PostListTableViewCell
+        
+        return cell
+    }
+    
+    
 }

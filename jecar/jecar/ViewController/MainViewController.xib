@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="jecar" customModuleProvider="target">
             <connections>
+                <outlet property="postListTableView" destination="8Km-Vp-75O" id="t6S-s7-Dyf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="lvQ-CT-nzY"/>
             </connections>
         </placeholder>
@@ -16,7 +17,31 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmP-EK-R7M">
+                    <rect key="frame" x="10" y="54" width="394" height="808"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Km-Vp-75O">
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="808"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="8Km-Vp-75O" firstAttribute="top" secondItem="vmP-EK-R7M" secondAttribute="top" id="k3C-cP-Z1M"/>
+                        <constraint firstAttribute="bottom" secondItem="8Km-Vp-75O" secondAttribute="bottom" id="kpZ-La-6yX"/>
+                        <constraint firstAttribute="trailing" secondItem="8Km-Vp-75O" secondAttribute="trailing" id="wNm-mf-xvm"/>
+                        <constraint firstItem="8Km-Vp-75O" firstAttribute="leading" secondItem="vmP-EK-R7M" secondAttribute="leading" id="weF-gd-nVA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vmP-EK-R7M" secondAttribute="bottom" id="H8j-cg-g8S"/>
+                <constraint firstItem="vmP-EK-R7M" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="MCu-8X-05e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vmP-EK-R7M" secondAttribute="trailing" constant="10" id="VTt-nu-vRs"/>
+                <constraint firstItem="vmP-EK-R7M" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="i2p-H3-pO2"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="141" y="113"/>
         </view>

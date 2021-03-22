@@ -14,6 +14,7 @@
                 <outlet property="loginBtn" destination="WNK-SN-7Kk" id="eFm-lr-kEb"/>
                 <outlet property="pwdTxtView" destination="UAC-Au-hEc" id="d74-QG-eaU"/>
                 <outlet property="signupBtn" destination="Z2a-5B-7YF" id="vMK-o0-SPQ"/>
+                <outlet property="titleLabel" destination="qqQ-zn-wMf" id="Cwi-8o-lo3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
